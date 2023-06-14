@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    h2 {
+      width: 300px;
+      height: 60px;
+      border-radius: 20px;
+      background-color: skyblue;
+      color: white;
+      margin: auto;
+      margin-top: 200px;
+      text-align: center;
+    }
+    button {
+      margin-left: 420px;
+      margin-top: 20px;
+      width: 300px;
+      height: 40px;
+      border-radius: 10px;
+      background-color: antiquewhite;
+      color: black;
+    }
+  </style>
+  <body>
+    <h2 id="random"></h2>
+    <button onclick="randomNumber()">Click here</button>
+    <script>
+      function randomNumber() {
+        let x = Math.floor(Math.random() * 100) + 1;
+        console.log(x);
+        document.getElementById("random").innerHTML = x;
+      }
+    </script>
+  </body>
+</html>
